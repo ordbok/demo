@@ -8,15 +8,15 @@
     "main": "docs/demo.js",
     "name": "@ordbok/demo",
     "repository": "https://github.com/ordbok/demo.git",
-    "version": "0.2.0",
+    "version": "0.2.2",
     "devDependencies": {
-        "@ordbok/core": "~0.2.0",
-        "@ordbok/index-plugin": "~0.2.0",
-        "browserify": "^16.5.0",
-        "typescript": "~3.7.4"
+        "@ordbok/core": "~0.2.2",
+        "@ordbok/index-plugin": "~0.2.2",
+        "browserify": "^17.0.0",
+        "typescript": "~3.9.10"
     },
     "engines": {
-        "node": ">=10.0.0"
+        "node": ">=12.0.0"
     },
     "keywords": [
         "dictionary",
