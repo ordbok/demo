@@ -420,6 +420,7 @@ storm:0
 stray:0
 street:0
 strew:1
+suicide:0
 summer:0
 sun:0
 sunday:0

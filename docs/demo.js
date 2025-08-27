@@ -1,6 +1,7 @@
 (function(f){if(typeof exports==="object"&&typeof module!=="undefined"){module.exports=f()}else if(typeof define==="function"&&define.amd){define([],f)}else{var g;if(typeof window!=="undefined"){g=window}else if(typeof global!=="undefined"){g=global}else if(typeof self!=="undefined"){g=self}else{g=this}g.OrdbokDemo = f()}})(function(){var define,module,exports;return (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.META_KEY = exports.TRANSLATION_SUBFOLDER = void 0;
 var core_1 = require("@ordbok/core");
 exports.TRANSLATION_SUBFOLDER = 'translations/';
 exports.META_KEY = core_1.Utilities.getKey('Meta');
@@ -8,6 +9,7 @@ exports.META_KEY = core_1.Utilities.getKey('Meta');
 },{"@ordbok/core":6}],2:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.start = void 0;
 var Results = require("./results");
 var Search = require("./search");
 function start() {
@@ -24,6 +26,7 @@ exports.start = start;
 },{"./results":3,"./search":4}],3:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.show = exports.init = exports.clear = void 0;
 var Config = require("./config");
 var core_1 = require("@ordbok/core");
 var index_plugin_1 = require("@ordbok/index-plugin");
@@ -120,6 +123,7 @@ function showTranslation(table, searchResult, languageKey) {
 },{"./config":1,"@ordbok/core":6,"@ordbok/index-plugin":12}],4:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.init = void 0;
 var Config = require("./config");
 var Results = require("./results");
 var core_1 = require("@ordbok/core");
@@ -228,11 +232,18 @@ function searchTranslations(query, lastPageIndex) {
 /*! Copyright (c) ORDBOK contributors. All rights reserved.                   */
 /*! Licensed under the MIT License. See the LICENSE file in the project root. */
 /*!---------------------------------------------------------------------------*/
-function __export(m) {
-    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
-}
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __exportStar = (this && this.__exportStar) || function(m, exports) {
+    for (var p in m) if (p !== "default" && !exports.hasOwnProperty(p)) __createBinding(exports, m, p);
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-__export(require("./demo/index"));
+__exportStar(require("./demo/index"), exports);
 
 },{"./demo/index":2}],6:[function(require,module,exports){
 "use strict";
@@ -240,15 +251,23 @@ __export(require("./demo/index"));
 /*! Copyright (c) ORDBOK contributors. All rights reserved.                   */
 /*! Licensed under the MIT License. See the LICENSE file in the project root. */
 /*!---------------------------------------------------------------------------*/
-function __export(m) {
-    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
-}
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __exportStar = (this && this.__exportStar) || function(m, exports) {
+    for (var p in m) if (p !== "default" && !exports.hasOwnProperty(p)) __createBinding(exports, m, p);
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-__export(require("./lib"));
+__exportStar(require("./lib"), exports);
 
 },{"./lib":9}],7:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.AJAX = void 0;
 var AJAX = (function () {
     function AJAX(baseUrl, cacheTimeout, responseTimeout) {
         if (baseUrl === void 0) { baseUrl = ''; }
@@ -383,6 +402,7 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Dictionary = void 0;
 var ajax_1 = require("./ajax");
 var utilities_1 = require("./utilities");
 var Dictionary = (function (_super) {
@@ -458,18 +478,26 @@ exports.default = Dictionary;
 
 },{"./ajax":7,"./utilities":11}],9:[function(require,module,exports){
 "use strict";
-function __export(m) {
-    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
-}
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __exportStar = (this && this.__exportStar) || function(m, exports) {
+    for (var p in m) if (p !== "default" && !exports.hasOwnProperty(p)) __createBinding(exports, m, p);
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-__export(require("./ajax"));
-__export(require("./dictionary"));
-__export(require("./markdown"));
-__export(require("./utilities"));
+__exportStar(require("./ajax"), exports);
+__exportStar(require("./dictionary"), exports);
+__exportStar(require("./markdown"), exports);
+__exportStar(require("./utilities"), exports);
 
 },{"./ajax":7,"./dictionary":8,"./markdown":10,"./utilities":11}],10:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Markdown = void 0;
 var utilities_1 = require("./utilities");
 var HEADLINE_REGEXP = /^(?:#+([\s\S]*)|([\s\S]*?)\n(?:={3,}|-{3,}))$/;
 var PAIR_REGEXP = /^([^\:\n\r\t\v]+):([\s\S]*)$/;
@@ -508,14 +536,14 @@ var Markdown = (function () {
         get: function () {
             return this._pages;
         },
-        enumerable: true,
+        enumerable: false,
         configurable: true
     });
     Object.defineProperty(Markdown.prototype, "raw", {
         get: function () {
             return this._raw;
         },
-        enumerable: true,
+        enumerable: false,
         configurable: true
     });
     Markdown.prototype.parse = function (markdown) {
@@ -532,6 +560,7 @@ exports.default = Markdown;
 },{"./utilities":11}],11:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Utilities = void 0;
 var BRACKET_REGEXP = /\([^\)]*\)|\[[^\]]*\]|\{[^\}]*\}/g;
 var NON_CHARACTER_REGEXP = /[^0-9A-Za-z\u0080-\uFFFF -]/g;
 var PATH_REGEXP = /^(.*?)([^\.\/]*)([^\/]*)$/;
@@ -634,6 +663,7 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Index = void 0;
 var core_1 = require("@ordbok/core");
 var Index = (function (_super) {
     __extends(Index, _super);

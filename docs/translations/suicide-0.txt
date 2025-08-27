@@ -1,0 +1,18 @@
+meta
+structure:Singular, Indefinite;Singular, Definite;Plural, Indefinite;Plural, Definite
+grammar:Noun
+english
+translation:(a) suicide;the suicide;suicides;the suicides
+grammar:Neuter
+german
+translation:(ein) Freitod;der Freitod;Freitode;die Freitode
+grammar:Masculine
+new-norwegian
+translation:(eit) sjølvmord;sjølvmordet;sjølvmord;sjølvmorda
+grammar:Neuter
+norwegian
+translation:(et) selvmord;selvmordet;selvmord;selvmordene
+grammar:Neuter
+swedish
+translation:(ett) självmord;självmordet;självmord;självmorden
+grammar:Neuter
