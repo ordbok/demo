@@ -8,10 +8,10 @@
     "main": "docs/demo.js",
     "name": "@ordbok/demo",
     "repository": "https://github.com/ordbok/demo.git",
-    "version": "0.2.2",
+    "version": "0.2.4",
     "devDependencies": {
-        "@ordbok/core": "~0.2.3",
-        "@ordbok/index-plugin": "~0.2.3",
+        "@ordbok/core": "~0.2.4",
+        "@ordbok/index-plugin": "~0.2.4",
         "browserify": "^17.0.0",
         "typescript": "~3.9.10"
     },
