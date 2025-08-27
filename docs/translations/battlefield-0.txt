@@ -1,0 +1,18 @@
+meta
+structure:Singular, Indefinite;Singular, Definite;Plural, Indefinite;Plural, Definite
+grammar:Noun
+english
+translation:(a) battlefield;the battlefield;battlefields;the battlefields
+grammar:Neuter
+german
+translation:(ein) Schlachtfeld;das Schlachtfeld;Schlachtfelder;die Schlachtfelder
+grammar:Neuter
+new-norwegian
+translation:(ei) slagmark;slagmarka;slagmarker slagmarkene
+grammar:Feminine
+norwegian
+translation:(ei) slagmark;slagmarka;slagmarker slagmarkene
+grammar:Feminine
+swedish
+translation:(ett) slagfält;slagfältet;slagfält;slagfälten
+grammar:Neuter

@@ -29,6 +29,7 @@ bad:0
 banana:0
 basement:0
 bathroom:0
+battlefield:0
 be-able-to:1
 be-fond-of:1
 be:1
@@ -49,6 +50,7 @@ boy:0
 braid:0
 brittle:0
 bucket:0
+budgerigar:0
 but:0
 by-the-way:0
 bye:0
@@ -413,6 +415,7 @@ stayed-overnight:0
 steep:0
 step:0
 stick:0
+stone:0
 storm:0
 stray:0
 street:0
